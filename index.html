@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz ensino médio</title>
+</head>
+
+<body>
+    <div quiz-caixa>
+        <div class="questao" id="questao1">
+            <img src="republica.jpg" alt="Proclamção da república do Brasil">
+            <p>Qual foi a data da proclamação da república no Brasil?</p>
+            <li><input type="radio" name="p1" value="A">A) 7 de setembro de 1822</li>
+            <li><input type="radio" name="p1" value="B">B) 21 de abril de 1792</li>
+            <li><input type="radio" name="p1" value="C">C) 15 de novembro de 1889 <span class="resposta-correta"></span>
+            </li>
+            <li><input type="radio" name="p1" value="D">D) 12 de outubro de 1492</li>
+            <p class="pontuacao">Pontuação: <span class="pontos">0</span></p>
+            <button onclick="resultado(1)">Verificar Resposta</button>
+        </div>
+
+        <div class="questao" id="questao2">
+            <img src="rio.jpg" alt="Rio Amazonas">
+            <p>Qual é o rio mais largo do mundo</p>
+            <li><input type="radio" name="p2" value="A">A) Rio Amazonas <span class="resposta-correta"></span></li>
+            <li><input type="radio" name="p2" value="B">B) Rio Nilo</li>
+            <li><input type="radio" name="p2" value="C">C) Rio Mississipi</li>
+            <li><input type="radio" name="p2" value="D">D) Rio Yang tsé</li>
+            <p class="pontuacao">Pontuação: <span class="pontos">0</span></p>
+            <button onclick="resultado(2)">Verificar Resposta</button>
+        </div>
+
+        <div class="questao" id="questao3">
+            <img src="mapa.png" alt="Mapa mundi">
+            <p>Qual o maior país do mundo?</p>
+            <li><input type="radio" name="p3" value="A">A) Brasil</li>
+            <li><input type="radio" name="p3" value="B">B) Rússia <span class="resposta-correta"></span></li>
+            <li><input type="radio" name="p3" value="C">C) Canadá</li>
+            <li><input type="radio" name="p3" value="D">D) China</li>
+            <p class="pontuacao">Pontuação: <span class="pontos">0</span></p>
+            <button onclick="resultado(3)">Verificar Resposta</button>
+        </div>
+
+        <div class="questao" id="questao4">
+            <img src="weber.png" alt="Max Weber">
+            <p>Qual sociólogo é conhecido por sua teoria sobre a ação social?</p>
+            <li><input type="radio" name="p4" value="A">A) Émile Durkheim</li>
+            <li><input type="radio" name="p4" value="B">B) Karl Marx</li>
+            <li><input type="radio" name="p4" value="C">C) Max Weber<span class="resposta-correta"></span></li>
+            <li><input type="radio" name="p4" value="D">D) Auguste Comte</li>
+            <p class="pontuacao">Pontuação: <span class="pontos">0</span></p>
+            <button onclick="resultado(4)">Verificar Resposta</button>
+        </div>
+
+        <div class="questao" id="questao5">
+            <img src="ingles.png" alt="Banner inglês">
+            <p>Pergunta: Qual das seguintes opções é o passado do verbo "go" em inglês?</p>
+            <li><input type="radio" name="p5" value="A">A) Goed<span class="resposta-correta"></span></li>
+            <li><input type="radio" name="p5" value="B">B) Goes</li>
+            <li><input type="radio" name="p5" value="C">C) Went</li>
+            <li><input type="radio" name="p5" value="D">D) Going</li>
+            <p class="pontuacao">Pontuação: <span class="pontos">0</span></p>
+            <button onclick="resultado(5)">Verificar Resposta</button>
+        </div>
+
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
