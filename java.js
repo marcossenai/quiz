@@ -10,6 +10,23 @@ function mostrarQuestao(numeroQuestao) {
     document.getElementById(`questao${numeroQuestao}`).style.display = 'block';
 }
 
+function atualizarPontos() {
+    const Pontuacao = document.querySelectorAll('.pontos');
+    Pontuacao.forEach(Pontuacao => {
+    Pontuacao.textContent = pontos;
+    });
+}
+
+
+function reiniciarQuiz() {
+    questaoAtual = 1;
+    pontos = 0;
+    tentativas = 0;
+    mostrarQuestao(questaoAtual);
+    atualizarPontos();
+}
+mostrarQuestao(questaoAtual);
+
 function resultado(numeroQuestao) {
     const questaoValor = document.getElementById(`questao${numeroQuestao}`);
     const opcao = questaoValor.querySelector('input[type="radio"]:checked');
@@ -46,23 +63,4 @@ function resultado(numeroQuestao) {
         }
     }
 }
-
-function atualizarPontos() {
-    const Pontuacao = document.querySelectorAll('.pontos');
-    Pontuacao.forEach(Pontuacao => {
-    Pontuacao.textContent = pontos;
-    });
-}
-
-
-function reiniciarQuiz() {
-    questaoAtual = 1;
-    pontos = 0;
-    tentativas = 0;
-    mostrarQuestao(questaoAtual);
-    atualizarPontos();
-}
-mostrarQuestao(questaoAtual);
-
-
 
